@@ -63,6 +63,11 @@ public class RecipeServiceImplTest {
         //should go boom
     }
 
+    @Test(expected = NumberFormatException.class)
+    public void getRecipeById_throws_NumberFormatException_when_id_is_not_a_number() throws Exception{
+        recipeService.findById(Long.valueOf("asd"));
+    }
+
 
     @Test
     public void getRecipeComandByIdTest() throws Exception {
