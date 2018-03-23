@@ -1,14 +1,15 @@
 package guru.springframework.spring5recipeapp.converters;
 
-import static org.junit.Assert.*;
 import guru.springframework.spring5recipeapp.commands.CategoryCommand;
 import guru.springframework.spring5recipeapp.domain.Category;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.*;
+
 public class CategoryCommandToCategoryTest {
 
-    public static final Long ID_VALUE = new Long(1L);
+    public static final String ID_VALUE = new String("1");
     public static final String DESCRIPTION = "description";
     CategoryCommandToCategory conveter;
 

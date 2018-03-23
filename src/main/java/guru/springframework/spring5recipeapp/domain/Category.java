@@ -9,7 +9,7 @@ import java.util.Set;
 @Setter
 public class Category {
 
-    private Long id;
+    private String id;
     private String description;
 
     private Set<Recipe> recipes;
