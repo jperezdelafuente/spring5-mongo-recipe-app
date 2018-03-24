@@ -107,11 +107,7 @@ public class IngredientServiceImpl implements IngredientService {
 
             //todo check for fail
 
-            //enhance with id value
-            IngredientCommand ingredientCommandSaved = ingredientToIngredientCommand.convert(savedIngredientOptional.get());
-            ingredientCommandSaved.setRecipeId(recipe.getId());
-
-            return ingredientCommandSaved;
+            return ingredientToIngredientCommand.convert(savedIngredientOptional.get());
         }
     }
 
